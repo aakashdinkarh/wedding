@@ -81,11 +81,8 @@
   display: inline-block;
   cursor: pointer;
 }
-.dotActive {
+.dotActive, .dot:hover {
   background-color: tomato;
-}
-.dots .dot:hover {
-  background-color: rgba(255, 99, 71, 0.55);
 }
 
 
