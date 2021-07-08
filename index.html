@@ -169,11 +169,13 @@
             iframe[i].contentWindow.document.body.scrollHeight + "px";
         };
       }
-    </script>
-    <style>
-      body {
-        margin: 0 !important;
+      window.onresize = () => {
+        for (let i = 0; i < iframe.length; i++) {
+          iframe[i].style.height =
+            iframe[i].contentWindow.document.body.scrollHeight + "px";
       }
-    </style>
+      }
+    </script>
+
   </body>
 </html>
