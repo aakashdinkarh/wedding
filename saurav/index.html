@@ -28,6 +28,12 @@
             iframe[i].contentWindow.document.body.scrollHeight + "px";
         };
       }
+      window.onresize = () => {
+        for (let i = 0; i < iframe.length; i++) {
+          iframe[i].style.height =
+            iframe[i].contentWindow.document.body.scrollHeight + "px";
+        }
+      }
     </script>
   </body>
 </html>
